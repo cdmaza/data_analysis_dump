@@ -1,31 +1,77 @@
-Here are five suggestions for data analysis and visualization based on your dataset:
+# Apartment Analysis around KL & Selangor
 
-Main aim, affordable rent price
-Thing to analysis:
-1. price - size (property type)
-2. price - room & bathrooms
-3. price - facilities
-4. price - place
-5. price - furnished
-1-5 (25/5)
-6. Rating
+This project demonstrates a simple analysis on apartment around KL and Selangor. There report will be shown in PowerBi and clean by pandas.  
 
-1. Monthly Rent Distribution by Property Type
+**(Disclaimer: Material used for educational purpose)**
 
-Visualize the distribution of monthly rent for each property type using box plots or violin plots to identify trends and outliers.
+![tittle](https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg)
 
-2. Relationship Between Number of Rooms and Monthly Rent
+**Business Goal:**
+- Foresee risk property investment 
 
-Use a scatter plot or bar chart to examine how the number of rooms correlates with monthly rent, segmented by property type or furnished status.
+**Consumer Goal:**
+- Affordable house rent
 
-3. Facilities Analysis Across Property Types
+## Explore Data
+Tools involve:
+- pandas
+- PowerBi
 
-Create a heatmap or bar chart to show the availability of facilities (e.g., swimming pool, parking, security) for different property types.
+Data involve:
+```bash
+'prop_name
+'rent'
+'rent_type'
+'region'
+'district'
+'property_type'
+'rooms','parking'
+'bathroom'
+'size'
+'furnished_rate'
+'facilities_rate'
+```
 
-4. Impact of Furnishing on Monthly Rent
+### Schema answer:
 
-Compare the average monthly rent of fully furnished, partially furnished, and unfurnished properties using a bar chart or grouped violin plot.
+#### Foresee risk property investment 
+- **Property Condition:**
+    Age of the property (2025 - completion year): new, moderate, and old
 
-5. Geographical Rent Trends by Location
+    | Year     | Price (RM) (annually)     |
+    | :-------- | :------- |
+    | `0–10` | `2.25 per sq. ft.` | 
+    | `10–20` | `4.49 per sq. ft.` | 
+    | `20+` | `8.99 per sq. ft.` |
 
-Plot the monthly rent on a map or grouped by location (e.g., Cheras, Mont Kiara) to identify areas with higher or lower rent costs.
+
+- **Rental Market Risk:**
+    
+    Competition (number of similar rental properties)
+    
+    Vacancy rates (how many rental units are empty).
+    `Column chart`
+
+#### Affordable house rent
+- Rental Prices: 
+    Current and historical rental rates. Average rent per square foot/meter
+- Income Data:
+    Median household income by area
+- Market Segmentation: 
+    Helps identify areas that cater to specific income groups (affordable, steady, luxury). `Histogram chart`
+
+    | Type     | Formula |
+    | :-------- | :------- |
+    | `Affordable` | `Total rent * Q1` | 
+    | `Steady` | `Total rent * Q2` | 
+    | `Luxury` | `Total rent * Q3` |
+Rent-to-Income Ratio=(Monthly Rent/Monthly Household Income
+ )×100
+
+- Property Features:
+Size and type of rental units
+Included utilities or amenities
+Transportation Accessibility:
+Proximity to public transport and major roads
+Cost of Living:
+Average monthly expenses in the area (utilities, groceries, healthcare)
