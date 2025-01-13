@@ -19,17 +19,18 @@ Tools involve:
 
 Data involve:
 ```bash
-'prop_name
-'rent'
-'rent_type'
-'region'
-'district'
-'property_type'
-'rooms','parking'
-'bathroom'
-'size'
-'furnished_rate'
-'facilities_rate'
+prop_name
+rent
+rent_type
+region
+district
+property_type
+rooms
+parking
+bathroom
+size
+furnished_rate
+facilities_rate
 ```
 
 ### Schema answer:
@@ -37,19 +38,28 @@ Data involve:
 #### Foresee risk property investment 
 - **Property Condition:**
     Age of the property (2025 - completion year): new, moderate, and old
-
-    | Year     | Price (RM) (annually)     |
+    
+    Maintanance fee accomandate:
+    | Year     | Price (RM) (annually)|
     | :-------- | :------- |
     | `0–10` | `2.25 per sq. ft.` | 
     | `10–20` | `4.49 per sq. ft.` | 
     | `20+` | `8.99 per sq. ft.` |
 
-
 - **Rental Market Risk:**
     
-    Competition (number of similar rental properties)
+    Competition (number of similar rental properties):
     
-    Vacancy rates (how many rental units are empty).
+    ↗ similiraty, ↗ Risk
+
+    X, Y: property_type , competition_rate
+
+    Vacancy rates (how many rental units are empty):
+
+    ↗ vacancy, ↗ Risk (oversupply)
+
+    X, Y: district , vacancy_rate
+
     `Column chart`
 
 #### Affordable house rent
@@ -57,8 +67,21 @@ Data involve:
     Current and historical rental rates. Average rent per square foot/meter
 - Income Data:
     Median household income by area
+    
+    | Type     | Income (RM) |
+    | :-------- | :------- |
+    | `B40` | `less 4849` | 
+    | `M40` | `4850 - 10959` | 
+    | `T20` | `10960 more ` |
+
+    Formula = 
+    X, Y: district , rent ()
+    
+    `Demographic chart`    
+
 - Market Segmentation: 
-    Helps identify areas that cater to specific income groups (affordable, steady, luxury). `Histogram chart`
+    Helps identify areas that cater to specific income groups (affordable, steady, luxury). 
+    `Histogram chart`
 
     | Type     | Formula |
     | :-------- | :------- |
