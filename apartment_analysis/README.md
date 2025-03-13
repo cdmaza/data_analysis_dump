@@ -2,38 +2,40 @@
 
 This project demonstrates a simple analysis on apartment around KL and Selangor. There report will be shown in PowerBi and clean by pandas.  
 
-**(Disclaimer: Material used for educational purpose)**
 
 ![tittle](https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg)
 
-**Business Goal:**
-- Foresee risk property investment 
+**Analysis Foresee:**
 
-**Consumer Goal:**
-- Affordable house rent
+Objective:
 
-## Explore Data
-Tools involve:
-- pandas
-- PowerBi
+ 1. To clean and analyze the data of Apartment around KL & Selangor
+ 2. To obtain insight on the apartment for business and consumer sight:
+    - Foresee risk property investment (**Business Goal:**)
+    - Affordable house rent (**Consumer Goal:**)
 
-Data involve:
-```bash
-prop_name
-rent
-rent_type
-region
-district
-property_type
-rooms
-parking
-bathroom
-size
-furnished_rate
-facilities_rate
-```
+Source: Kaggle
 
-### Schema answer:
+## Data Insight
+Question build:
+
+1. **How do the price of games on the Steam Store impact the total of ownership?**
+
+2. **How does game genre affect average playtime for specific?**
+
+3. **How do user ratings effect game sales success on the Steam Store?**
+
+ 4. **Between free and paid games, which does player prefer to play?**
+
+
+### Business question answer
+
+Data Details:
+
+Data Descriptions:
+
+
+## Data Chart:
 
 #### Foresee risk property investment 
 - **Property Condition:**
@@ -108,4 +110,4 @@ facilities_rate
 
     `Histogram chart`
 
-## Implementation
+## Analysis Knowledge

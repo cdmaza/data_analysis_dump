@@ -2,7 +2,6 @@
 
 This project demonstrates an analysis on steam game dateset. There report will be shown in PowerBi and clean by pandas.  
 
-**(Disclaimer: Material used for educational purpose)**
 
 ![tittle](https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/02/steam-big-list-of-games.jpg)
 
